@@ -10,10 +10,42 @@ Modify the number of repetitions in the simulation to 100 (from the original 100
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
+# Author: Jessica Liu
 
 ```
-Please write your explanation here...
+There are 3 stages of sampling involved. 
+
+1. Initial infection (ATTACK_RATE = 0.10)
+
+Sampling Procedure: simple random sampling 
+Functions: np.random.choice()
+Sample Size: 100 individuals
+Sampling Frame: all 1000 individuals
+Distribution: uniform distribution
+Relation to Blog Post: represents the random infection process, where each individual has an equal chance of being infected
+
+2. Primary contact tracing (TRACE_SUCCESS = 0.20)
+
+Sampling Procedure: Bernoulli trials
+Functions: np.random.rand()
+Sample Size: ~20% of infected individuals
+Sampling Frame: infected individuals
+Distribution: bionomial distribution
+Relation to Blog Post: Represents the tracing process where only some infected individuals are successfully traced.
+
+3. Secondary contact tracing (SECONDARY_TRACE_THRESHOLD = 2)
+
+Functions: value_counts()
+Sample Size: all infected individuals attending events that meet the threshold of >=2 traced cases
+Sampling Frame: infected individuals at events with enough traced cases
+Distribution: N/A
+Relation to Blog Post: Represents the tracing process where individuals at events with multiple traced cases lead to additional tracing of all infected attendees at that event. 
+
+No, the code doesn't reproduce the graph from the original blog post. The output histogram for "Infections from Weddings" and "Traced to Weddings" both centre around 0.2 because it treats the attendees as two large clusters rather than multiple small groups. As the result, both clusters can easily meet the second tracing condition, maintaining the 20% proportion. 
+
+Reducing the number of repetitions from 1000 to 100 leads to higher variability between runs, making the results less stable and reproducible.
+
+I modified the random seed setting to ensure reproducibility while maintaining variation across iterations.
 
 ```
 
@@ -39,9 +71,9 @@ Please write your explanation here...
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-1`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [x] Create a branch called `assignment-1`.
+- [x] Ensure that the repository is public.
+- [x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [x] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via the help channel in Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
