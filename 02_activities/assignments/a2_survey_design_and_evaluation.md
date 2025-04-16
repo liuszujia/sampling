@@ -40,30 +40,44 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+This survey is designed to identify the factors causing the recent increase in turnover among entry- and lower-level employees. The feedback will help us determine improvements we can make to enhance job satisfaction. 
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target Population: 
+All active entry-level and lower-level employees, along with voluntary departures from these groups in the last six months
+
+Sampling Frame: 
+The subset of the target population with verified HR records and available contact information
+
+Sampling Units: 
+Individual employees randomly selected from the sampling frame
+
+Observational Units: 
+Survey responses from participating sample members
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. On a scale of 1-5, how satisfied were you with how your pay reflected your role and responsibilities? (1 = Very dissatisfied, 5 = Very satisfied)
+
+2. On a scale of 1-5, how satisfied were you with opportunities to advance your career? (1 = Very dissatisfied, 5 = Very satisfied)
+
+3. On a scale of 1-5, how satisfied were you with your ability to balance work and personal life? (1 = Very dissatisfied, 5 = Very satisfied)
+
+4. On a scale of 1-5, how satisfied were you with your team’s collaboration? (1 = Very dissatisfied, 5 = Very satisfied)
+
+5. What most influenced your job satisfaction? 
+A. Pay  B. Career Growth  C. Workload Intensity  D. Leadership Quality  E. Others: ________
+
+6. What one change would most enhance the employee experience for someone in your position?
+
+7. Is there anything else we should know about your experience?
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +85,31 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. Sample type: two-stage sampling (divide ten provinces into strata; SRS without replacement from each stratum)
+
+2. Sample size: 20,000 (16,149 excluding "rejected" respondents)
+
+3. Target population: all persons 15 years of age and older in Canada (excluding residents of the Yukon, Northwest Territories, and Nunavut, and full-time residents of institutions)
+
+4. Sampling frame: telephone numbers (landine and cellular) available to Statistics Canada and the Address Register
+
+5. Survey mode(s): electronically as a self-completed questionnaire as well as via computer assisted telephone interviews
+
+6. Timeline: data collected from 2018-09-04 to 2018-12-28
+
+7. Response rate: 41.9%
+
+8. Weights: the weight produced after the following steps is the final person weight: initial weight calculation, removal of out-of-scope records, three-stage non-response adjustment, person weight calculation, adjustment of person weights for rejective sampling, adjustment of person weights to external totals, stratum adjustment, income adjustment, province-age-sex adjustment, ranking ratio adjustments
+
+9. Data processing: the following steps are used to transform survey responses obtained during collection into a form that is suitable for tabulation and data analysis: coding, edit and imputation, creation of combined and derived variables, additional public use microdata file (PUMF) processing steps
+
+10. Cleaning, imputation, etc: imputation of personal and family income, formal volunteering variables, informal volunteering variables, imputing variables in the donation file and the solicitation methods
+
+11. Sources of error: imperfect coverage and non-response errors
+
+12. Limitations, known biases, etc: excludes households without telephones
+
+13. Link to documentation and any additional sources used: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=4430; https://www150.statcan.gc.ca/n1/en/pub/45-25-0001/cat5/c33_2018.zip?st=S0aRsyfc
 ```
 
 ## Rubric
@@ -93,9 +131,9 @@ write your answer here
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-2`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [x] Create a branch called `assignment-2`.
+- [x] Ensure that the repository is public.
+- [x] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [x] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via the help channel in Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
